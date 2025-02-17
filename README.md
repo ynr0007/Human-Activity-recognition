@@ -1,0 +1,1 @@
+his project aims to recognize human activity by integrating Detectron2 with LSTM. By analyzing the motion of objects in video input, the system achieves an accuracy rate of approximately 89% in identifying specific human actions. This integration leverages the strengths of object detection and sequential modeling to provide precise and reliable activity recognition.
