@@ -1,3 +1,23 @@
+# 🧍‍♂️ Human Activity Recognition
+
+This project implements an intelligent video analysis system capable of detecting and classifying human activities in real time. It combines **Detectron2** for pose/keypoint estimation with a custom **LSTM model** for temporal action recognition, delivering a powerful end-to-end inference pipeline. The system achieves an accuracy rate of approximately **89%** in identifying specific human actions
+
+### 🔄 How It Works:
+- 📹 Accepts a video input through a Flask-based web interface.
+- 🧠 Applies Detectron2 to extract human keypoints from each frame.
+- 🧮 Stores frame data in a sliding window for temporal context.
+- 🕵️ Feeds buffered keypoints to a trained LSTM model to classify the action.
+- 🎬 Annotates the detected activity back onto the output video for visualization.
+
+This hybrid approach bridges spatial recognition with temporal modeling, enabling precise and continuous human activity tracking.
+
+📄 **For more information, read our published paper:**  
+*Presented at the 8th International Conference on Agriculture, Animal Science and Rural Development, 2021.*
+
+🔗 **[View the Paper (PDF)](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.ispeco.org/_files/ugd/614b1f_b0f1f589c90a4ea18aadfa6c40e26f18.pdf)**
+
+---
+
 
 # Human Action Recognition using Detectron2 and LSTM
 
@@ -55,3 +75,6 @@ When you click on 'Submit', you will see a progress bar showing the progress and
 We have provided jupytyer notebooks to run the application 
 1. To run the application (for example in google colab),  use *human_action_classification.ipynb*
 2. To train the LSTM model, use *lstm_train.ipynb* (You don't need this unless you want to retrain the model with your own data set or experiment with it.)
+
+
+
